@@ -12,7 +12,8 @@ How to Set Up the Game:
 2. In configurations (for both server and client), set the Working directory to *./core/assets/* & classpath of module to *desktop_main*.
 3. Start the server and let the window pop up. Then start the client.
 4. If Client cannot connect, set a different DEFAULT_SERVER_PORT in NetworkManager.java
-5.  I. If Client still cannot connect, in *core/src/networking/NetworkManager.java*, set the DEFAULT_SERVER_IP to the one of your computer. See comments there.
+5.  
+    I. If Client still cannot connect, in *core/src/networking/NetworkManager.java*, set the DEFAULT_SERVER_IP to the one of your computer. See comments there.
     II. In *core/desktop/DesktopServerLauncher.java*, change the publicIP variable on line 16
 
 Game Screenshots:
