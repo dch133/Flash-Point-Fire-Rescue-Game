@@ -10,15 +10,12 @@ import java.net.UnknownHostException;
 
 public class NetworkManager {
 
-  private static NetworkManager instance;
-  //    final public String DEFAULT_SERVER_IP = getMyIPAddress(); //CHANGE THIS TO WORK OUTSIDE
-  // MCGILL WORLD
-  // public static final String DEFAULT_SERVER_IP = "142.157.74.18"; // Simon public ip address
-//  public static final String DEFAULT_SERVER_IP = "142.157.67.193"; // Elvric public ip address
- //  final public static String DEFAULT_SERVER_IP = "132.216.233.202"; // DC public ip
-//  final public static String DEFAULT_SERVER_IP = "142.157.66.229"; // JZ public ip
-  final public static String DEFAULT_SERVER_IP = "142.157.75.105"; // Matty V IP
+  final public static String DEFAULT_SERVER_IP = getMyIPAddress();
   public static final int DEFAULT_SERVER_PORT = 54590;
+
+  /* USE THIS to work with Internet Access Points that also act as ISP (e.g. McGill network */
+//  final public static String DEFAULT_SERVER_IP = "192.168.0.1"; // Set here the Public IP of your computer
+
 
   // In the controller, because both Server and Client need this class
   public static String createJSON(String command, String msg) {
@@ -62,7 +59,8 @@ public class NetworkManager {
 
     return ipAddress;
   }
-  //
+
+  // Other methods:
   //  public String getIPByAddress(String address) {
   //    String ipAddress = null;
   //    try {
