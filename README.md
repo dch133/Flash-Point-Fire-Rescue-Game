@@ -14,7 +14,7 @@ How to Set Up the Game:
 4. If Client cannot connect, set a different DEFAULT_SERVER_PORT in NetworkManager.java
 5.  If Client still cannot connect:
     - In *core/src/networking/NetworkManager.java*, set the DEFAULT_SERVER_IP to the one of your computer. See comments there.
-    - In *core/desktop/DesktopServerLauncher.java*, change the publicIP variable on line 16
+    - In *core/desktop/DesktopServerLauncher.java*, change the publicIP variable on line 16 as indicated there.
 
 Game Screenshots:
 See Screenshots folder
