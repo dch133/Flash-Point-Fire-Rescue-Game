@@ -14,7 +14,6 @@ public class DesktopClientLauncher
         LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
 //        new LwjglApplication(new FlashPointGame(), config);
 
-        System.out.println(NetworkManager.getMyPublicIP());
         Client.createClient();
         new LwjglApplication(Client.clientFPGame, config);
         System.out.println();

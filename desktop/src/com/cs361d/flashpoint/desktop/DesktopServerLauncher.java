@@ -12,8 +12,10 @@ import java.util.Scanner;
 
 public class DesktopServerLauncher {
     public static void main(String[] arg) {
-        // Check if you should connect as a server or a client
-        String publicIP = NetworkManager.getMyPublicIP();
+        // Choose connection type: if 1st one doesn't work try the 2nd one
+        String publicIP = NetworkManager.getMyIPAddress();
+//        String publicIP = NetworkManager.getMyPublicIP();
+
         if (publicIP.equals(NetworkManager.DEFAULT_SERVER_IP)) {
             Server.createServer();
         } else {
